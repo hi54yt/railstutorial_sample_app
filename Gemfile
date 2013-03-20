@@ -1,5 +1,4 @@
-source 'https://rubygems.org'
-
+source 'http://ruby.taobao.org'
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
@@ -7,7 +6,8 @@ gem 'rails', '3.2.13'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.11.0'
+  gem 'capybara', '1.1.2'
 end
 
 
@@ -25,10 +25,6 @@ end
 
 gem 'jquery-rails'
 
-
-group :test do
-  gem 'capybara'
-end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
